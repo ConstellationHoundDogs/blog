@@ -1,8 +1,8 @@
 var canvas = document.getElementById('main');
 var ctx = canvas.getContext('2d');
 
-var CANVAS_WIDTH = 400;
-var CANVAS_HEIGHT = 400;
+var CANVAS_WIDTH = window.innerWidth;
+var CANVAS_HEIGHT = window.innerHeight;
 
 canvas.width = CANVAS_WIDTH;
 canvas.height = CANVAS_HEIGHT;
@@ -51,7 +51,7 @@ Fractal.prototype.onEnd = function() {
   }
 }
 
-elementArr.push(new Fractal(1, 25, 200, 200, 1.5 * Math.PI));
+elementArr.push(new Fractal(1, 25, CANVAS_WIDTH / 2, CANVAS_HEIGHT, 1.5 * Math.PI));
 
 ctx.strokeStyle='#FF0000';
 
