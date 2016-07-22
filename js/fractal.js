@@ -51,7 +51,7 @@ Fractal.prototype.onEnd = function() {
   }
 }
 
-elementArr.push(new Fractal(1, 25, CANVAS_WIDTH / 2, CANVAS_HEIGHT, 1.5 * Math.PI));
+elementArr.push(new Fractal(1, 100, CANVAS_WIDTH / 2, CANVAS_HEIGHT, 1.5 * Math.PI));
 
 ctx.strokeStyle='#FF0000';
 
